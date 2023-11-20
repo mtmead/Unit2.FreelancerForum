@@ -12,9 +12,12 @@ const freelancers = [
     //new freelancers continue to appear every few seconds, and the average starting price is updated accordingly
   ];
 
-  function addFreelancer() {
-    if() 
-  }
+const addFreelancerID= setInterval(addFreelancer, 1000);
+
+function addFreelancer(){
+    if ()
+}
+
   function render () {
     const names=document.getElementById("names");
     const nameElements=freelancers.map((name) => {
@@ -23,3 +26,18 @@ const freelancers = [
         return element;
     })
   }
+
+// function that logs "hi"
+/* function logHi() {
+    console.log("hi")
+  }
+// save this to clear
+  const intervalId = setInterval(logHi, 1000)
+  
+// function to stop process
+  function stop() {
+    clearInterval(intervalId);
+  }
+  
+// stop process after 6 seconds
+  setTimeout(stop, 6000)
